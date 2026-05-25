@@ -7,11 +7,13 @@
 
 ## 🛠️ 环境依赖 (Prerequisites)
 
-运行本仓库的绘图脚本需要以下基础 Python 环境：
-- Python 3.8+
-- matplotlib >= 3.5.0
-- seaborn >= 0.11.0
-- numpy, pandas
+本项目核心基于 `matplotlib` 进行绘制。为了确保绘图效果与论文一致，建议您使用与本人相同的依赖版本。
+
+您无需手动逐个安装，只需克隆仓库后在终端运行以下命令，即可**自动一键安装**所有必需的依赖：
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
@@ -19,32 +21,38 @@
 
 本仓库提供两种分类方式，方便您快速查找所需的代码：
 
-### 1. 论文分类
-* [globecom-2026](globecom-2026/): 包含针对 Globecom 2026 投稿论文的可视化代码与脱敏数据。
+### A. 论文分类
 
-### 2. 绘图类型分类
+> [!IMPORTANT]
+> **📢 如果您使用了本仓库的代码，或相关研究工作对您的学术研究有所启发，请考虑在您的论文中引用我们的工作。**
 
-| 绘图类型 | 对应脚本 (Code Link) | 论文图例位置与说明 |
+* 📄 **2026 Globecom**: *“Delay-Robust Deep Reinforcement Learning for Channel Access in Mobile Underwater Acoustic Networks”*
+  > 💻 **[查看绘图代码](globecom-2026/)** | 💡 **[阅读论文 (arXiv/PDF Link)](https://arxiv.org/abs/2605.06536)**
+  > 
+  > <details>
+  > <summary><b>📋 BibTeX 引用格式 (Click to expand)</b></summary>
+  >
+  > ```bibtex
+  > @article{ye2026mobiu,
+  >   title={Delay-Robust Deep Reinforcement Learning for Ranging-Free Channel Access under Mobility in Underwater Acoustic Networks},
+  >   author={Ye, Huaisheng and Ye, Xiaowen and Fu, Liqun},
+  >   journal={arXiv preprint arXiv:2605.06536},
+  >   year={2026}
+  > }
+  > ```
+  > </details>
+
+### B. 绘图类型分类
+
+| 绘图类型 | 对应脚本 (Code Link) | 插图位置与说明 |
 | :--- | :--- | :--- |
-| **柱状图 (Bar Chart)** | [`plot_fig4_performance.py`](globecom-2026/plot_fig4_performance.py) | 图(a) 多基线多场景性能对比 |[![Fig 4a](./globecom-2026/fig3.png)](./globecom-2026/fig3.pdf)
-| | [`plot_fig7_ablation.py`](globecom-2026/plot_fig7_ablation.py) | 图(a) 消融实验结果对比 |
-| **折线图 (Line Chart)** | [`plot_fig4_performance.py`](globecom-2026/plot_fig4_performance.py) | 图(b) 性能对比曲线 |
-| | [`plot_fig5_throughput.py`](globecom-2026/plot_fig5_throughput.py) | 吞吐量趋势图 |
-| | [`plot_fig6_convergence.py`](globecom-2026/plot_fig6_convergence.py) | 算法收敛过程 |
-| | [`plot_fig7_ablation.py`](globecom-2026/plot_fig7_ablation.py) | 图(b) 消融实验结果对比 |
-| **热力图 (Heatmap)** | [`plot_fig3_heatmap.py`](globecom-2026/plot_fig3_heatmap.py) | 空间/参数热力度分布图 |
-
-
----
-
-## 📝 论文引用 (Citation)
-
-如果您在研究中参考了本仓库的绘图思路或使用了相关代码，请引用对应的论文：
-
-> 📄 **Globecom 2026 投稿论文信息**
-> * *Authors:* [作者姓名]
-> * *Title:* [论文题目]
-> * *Journal/Conference:* IEEE GLOBECOM 2026
+| **柱状图 (Bar Chart)** | [`plot_fig4_performance.py`](globecom-2026/plot_fig4_performance.py) | 图(a) 多基线多场景性能对比<br> <details open><summary>🔍 预览</summary><br><img src="globecom-2026/figures/fig4.png" width="350"></details> |
+| | [`plot_fig7_ablation.py`](globecom-2026/plot_fig7_ablation.py) | 图(a) 消融实验结果对比 <details><summary>🔍 预览</summary><br><img src="globecom-2026/figures/fig7.png" width="350"></details> |
+| **折线图 (Line Chart)** | [`plot_fig5_throughput.py`](globecom-2026/plot_fig5_throughput.py) | 吞吐量趋势图 <details open><summary>🔍 预览</summary><br><img src="globecom-2026/figures/fig5.png" width="350"></details> |
+| | [`plot_fig4_performance.py`](globecom-2026/plot_fig4_performance.py) | 图(b) 性能对比曲线 <details><summary>🔍 预览</summary><br><img src="globecom-2026/figures/fig4.png" width="350"></details> |
+| | [`plot_fig6_convergence.py`](globecom-2026/plot_fig6_convergence.py) | 算法收敛过程 <details><summary>🔍 预览</summary><br><img src="globecom-2026/figures/fig6.png" width="350"></details> |
+| | [`plot_fig7_ablation.py`](globecom-2026/plot_fig7_ablation.py) | 图(b) 消融实验结果对比 <details><summary>🔍 预览</summary><br><img src="globecom-2026/figures/fig7.png" width="350"></details> |
+| **热力图 (Heatmap)** | [`plot_fig3_heatmap.py`](globecom-2026/plot_fig3_heatmap.py) | 空间/参数热力度分布图 <details open><summary>🔍 预览</summary><br><img src="globecom-2026/figures/fig3.png" width="350"></details> |
 
 ---
 
