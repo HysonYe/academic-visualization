@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ### A. 论文分类
 
 > [!IMPORTANT]
-> **📢 如果您使用了本仓库的代码，或相关研究工作对您的学术研究有所启发，请您考虑引用我们的工作。**
+> **📢 如果您使用了本仓库的代码，或相关工作对您的学术研究有所启发，请您考虑引用我们的工作。**
 
 * 📄 **2026 Globecom**: *“Delay-Robust Deep Reinforcement Learning for Channel Access in Mobile Underwater Acoustic Networks”*
   > 💻 **[查看绘图代码](globecom-2026/)** | 💡 **[阅读论文 (arXiv/PDF Link)](https://arxiv.org/abs/2605.06536)**
