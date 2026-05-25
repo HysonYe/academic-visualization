@@ -24,7 +24,7 @@ plt.rcParams['axes.titlesize'] = 14
 # =========================================================================
 CONFIG = {
     # 基础输出配置
-    'save_path': 'fig5.pdf',
+    'save_path': 'figures/fig5.pdf',
     'fig_size': (7.2, 3.5),
     'input_data': 'data/fig5_data.json',
 
@@ -174,7 +174,9 @@ def plot_dynamic_mobility_results(baselines, name_map, mobility_data, convergenc
     plt.subplots_adjust(bottom=0.24) 
     
     plt.savefig(CONFIG['save_path'], format='pdf', bbox_inches='tight')
-    print(f"成功保存学术图表至: {CONFIG['save_path']}")
+    png_path = CONFIG['save_path'].rsplit('.', 1)[0] + '.png'
+    plt.savefig(png_path, format='png', bbox_inches='tight')
+    print(f"成功保存学术图表至: {CONFIG['save_path']}, {png_path}")
     plt.show()
 
 

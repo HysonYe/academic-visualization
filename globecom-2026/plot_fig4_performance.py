@@ -25,7 +25,7 @@ plt.rcParams['axes.titlesize'] = 14
 # NOTE: 使用者只需在此处修改文字或调整位置
 # =========================================================================
 CONFIG = {
-    'save_path': 'fig4.pdf',
+    'save_path': 'figures/fig4.pdf',
     'fig_size': (7.2, 3.5),
     'input_data': 'data/fig4_data.json',
 
@@ -225,7 +225,9 @@ def plot_static_combined_bottom_legend(baselines, name_map, bar_data, line_data)
     plt.subplots_adjust(bottom=0.24) 
     
     plt.savefig(CONFIG['save_path'], format='pdf', bbox_inches='tight')
-    print(f"成功保存学术图表至: {CONFIG['save_path']}")
+    png_path = CONFIG['save_path'].rsplit('.', 1)[0] + '.png'
+    plt.savefig(png_path, format='png', bbox_inches='tight')
+    print(f"成功保存学术图表至: {CONFIG['save_path']}, {png_path}")
     plt.show()
 
 if __name__ == "__main__":

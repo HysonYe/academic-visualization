@@ -26,7 +26,7 @@ plt.rcParams['axes.titlesize'] = 14
 # =========================================================================
 CONFIG = {
     # 基础输出与解耦中介配置
-    'save_path': 'fig7.pdf',
+    'save_path': 'figures/fig7.pdf',
     'fig_size': (7.2, 3.5),
     'input_data': 'data/fig7_data.json',
 
@@ -199,7 +199,9 @@ def plot_ablation_results(ablation_data, trend_data, delay_data):
     plt.subplots_adjust(bottom=0.24) 
     
     plt.savefig(CONFIG['save_path'], format='pdf', bbox_inches='tight')
-    print(f"成功保存学术图表至: {CONFIG['save_path']}")
+    png_path = CONFIG['save_path'].rsplit('.', 1)[0] + '.png'
+    plt.savefig(png_path, format='png', bbox_inches='tight')
+    print(f"成功保存学术图表至: {CONFIG['save_path']}, {png_path}")
     plt.show()
 
 if __name__ == "__main__":

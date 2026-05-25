@@ -23,7 +23,7 @@ plt.rcParams['legend.fontsize'] = 14
 # =========================================================================
 CONFIG = {
     # 基础输出与解耦媒介配置
-    'save_path': 'fig6.pdf',
+    'save_path': 'figures/fig6.pdf',
     'fig_size': (6, 3.5),
     'input_data': 'data/fig6_data.json',
     'baseline': 'mobiu_mac',
@@ -160,7 +160,9 @@ def plot_throughput(trend_data):
 
     plt.tight_layout()
     plt.savefig(CONFIG['save_path'], format='pdf', bbox_inches='tight')
-    print(f"成功保存学术图表至: {CONFIG['save_path']}")
+    png_path = CONFIG['save_path'].rsplit('.', 1)[0] + '.png'
+    plt.savefig(png_path, format='png', bbox_inches='tight')
+    print(f"成功保存学术图表至: {CONFIG['save_path']}, {png_path}")
     plt.show()
 
 if __name__ == "__main__":

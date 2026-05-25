@@ -33,7 +33,7 @@ plt.rcParams['axes.titlesize'] = 20
 # =========================================================================
 CONFIG = {
     # 基础输出与解耦中介配置
-    'save_path': 'fig3.pdf',
+    'save_path': 'figures/fig3.pdf',
     'fig_size': (22, 5),
     'input_data': 'data/fig3_data.json',
 
