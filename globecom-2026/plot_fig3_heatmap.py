@@ -165,7 +165,9 @@ def plot_combined_analysis(data_dict):
     fig.legend(handles=[boundary_line], loc='lower center', bbox_to_anchor=(0.5, -0.01), ncol=1, frameon=False)
     plt.subplots_adjust(left=0.05, right=0.95, bottom=0.18, top=0.9)
     plt.savefig(CONFIG['save_path'], format='pdf', bbox_inches='tight')
-    print(f"成功保存学术图表至: {CONFIG['save_path']}")
+    png_path = CONFIG['save_path'].rsplit('.', 1)[0] + '.png'
+    plt.savefig(png_path, format='png', bbox_inches='tight')
+    print(f"成功保存学术图表至: {CONFIG['save_path']}, {png_path}")
     plt.show()
 
 if __name__ == "__main__":
