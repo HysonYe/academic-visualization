@@ -15,7 +15,7 @@
 
 ---
 
-## 📂 目录结构与绘图索引
+## 📂 目录结构与绘图索引 (Catalog)
 
 本仓库提供两种分类方式，方便您快速查找所需的代码：
 
@@ -26,7 +26,7 @@
 
 | 绘图类型 | 对应脚本 (Code Link) | 论文图例位置与说明 |
 | :--- | :--- | :--- |
-| **柱状图 (Bar Chart)** | [`plot_fig4_performance.py`](globecom-2026/plot_fig4_performance.py) | 图(a) 多基线多场景性能对比 | <a href="globecom-2026/fig3.pdf" target="_blank"><img src="globecom-2026/fig3.png" width="100" alt="Fig 4a"></a> |
+| **柱状图 (Bar Chart)** | [`plot_fig4_performance.py`](globecom-2026/plot_fig4_performance.py) | 图(a) 多基线多场景性能对比 |[![Fig 4a](./globecom-2026/fig3.png)](./globecom-2026/fig3.pdf)
 | | [`plot_fig7_ablation.py`](globecom-2026/plot_fig7_ablation.py) | 图(a) 消融实验结果对比 |
 | **折线图 (Line Chart)** | [`plot_fig4_performance.py`](globecom-2026/plot_fig4_performance.py) | 图(b) 性能对比曲线 |
 | | [`plot_fig5_throughput.py`](globecom-2026/plot_fig5_throughput.py) | 吞吐量趋势图 |
